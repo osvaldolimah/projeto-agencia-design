@@ -2,9 +2,10 @@ import './style.css';
 import Card from "../Card";
 import { useState } from 'react';
 
+
 export default function SecaoExperienciaTrabalho(props) {
 
-  const [ehTemaEscuro, setTemaEscuro] = useState(false);
+  const [ehTemaEscuro, setTemaEscuro] = useState(false)
 
   return (
     <section id="secaoExpDeTrab" className={props.ehTemaEscuro ? "secao-modo-escuro" : "secao-modo-claro"}>
@@ -22,13 +23,13 @@ export default function SecaoExperienciaTrabalho(props) {
         empresa="Pied Piper StartUp."
         paragrafo="Criação de Landing pages, sites institucionais e E-commerces completamente personalizados e otimizados para buscadores"
         />
-        <Card ehTemaEscuro = {ehTemaEscuro}
+        <Card ehTemaEscuro={ehTemaEscuro}
           data="AGOSTO 2016 - 2019"
           titulo="Product Designer"
           empresa="E Corp."
           paragrafo="Criação de modelos estratégicos de conversão identificando o cliente e mapeando toda a sua jornada de compra"
         />
-        <Card ehTemaEscuro = {ehTemaEscuro}
+        <Card ehTemaEscuro={ehTemaEscuro}
           data="FEVEREIRO 2019 - 2021"
           titulo="Digital Consulting"
           empresa="Arasaka Inc."
